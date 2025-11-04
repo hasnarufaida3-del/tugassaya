@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PinkGram - Media Sosial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #ffe6f2;
+      font-family: 'Poppins', sans-serif;
+    }
+    .navbar {
+      background-color: #ffb6d9 !important;
+    }
+    .navbar-brand {
+      font-weight: 700;
+      color: white !important;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+    }
+    .form-control {
+      border-radius: 20px;
+      border: none;
+    }
+    .story img {
+      border-radius: 50%;
+      border: 3px solid #ff4da6;
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+    }
+    .post-card {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
+    }
+    .post-header img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+    .post-img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .btn-pink {
+      background-color: #ff4da6;
+      color: white;
+      border-radius: 20px;
+      border: none;
+    }
+    .btn-pink:hover {
+      background-color: #ff1a8c;
+      color: white;
+    }
+    .sidebar {
+      position: sticky;
+      top: 90px;
+    }
+    footer {
+      background-color: #ffb6d9;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      border-radius: 20px 20px 0 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-light fixed-top shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a class="navbar-brand" href="#">💖 PinkGram</a>
+      <form class="d-none d-md-flex">
+        <input class="form-control text-center" type="search" placeholder="Cari di PinkGram..." style="width:200px;">
+      </form>
+      <div>
+        <button class="btn btn-link text-white"><i class="bi bi-house-door-fill fs-5"></i></button>
+        <button class="btn btn-link text-white"><i class="bi bi-chat-dots-fill fs-5"></i></button>
+        <button class="btn btn-link text-white"><i class="bi bi-person-circle fs-5"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5 pt-4">
+    <div class="row justify-content-center">
+      <!-- Feed utama -->
+      <div class="col-md-7">
+        <!-- Stories -->
+        <div class="d-flex overflow-auto mb-3 p-3 bg-white rounded shadow-sm">
+          <div class="story text-center me-3">
+            <img src="nano.jpg" alt="">
+            <small>hasna</small>
+          </div>
+          <div class="story text-center me-3">
+            <img src="aqela.jpg" alt="">
+            <small>amel</small>
+          </div>
+          <div class="story text-center me-3">
+            <img src="viya.jpg" alt="">
+            <small>viya</small>
+          </div>
+          <div class="story text-center me-3">
+            <img src="hasna2.jpg" alt="">
+            <small>nnarawrr</small>
+          </div>
+        </div>
+
+        <!-- Postingan 1 -->
+        <div class="post-card p-3">
+          <div class="d-flex align-items-center mb-2">
+            <img src="https://via.placeholder.com/45" alt="">
+            <strong>@hasna_rufaida</strong>
+          </div>
+          <img src="https://via.placeholder.com/700x400/ffcce6/ffffff?text=🌸+Pink+Vibes+🌸" class="post-img mb-2" alt="foto">
+          <div class="d-flex justify-content-between">
+            <div>
+              <button class="btn btn-link text-danger"><i class="bi bi-heart-fill"></i></button>
+              <button class="btn btn-link text-dark"><i class="bi bi-chat"></i></button>
+              <button class="btn btn-link text-dark"><i class="bi bi-send"></i></button>
+            </div>
+            <button class="btn btn-link text-dark"><i class="bi bi-bookmark"></i></button>
+          </div>
+          <p class="mb-0"><strong>320 suka</strong></p>
+          <p><strong>@hasna_rufaida</strong> Hari ini dunia berwarna pink 💖✨</p>
+        </div>
+
+        <!-- Postingan 2 -->
+        <div class="post-card p-3">
+          <div class="d-flex align-items-center mb-2">
+            <img src="https://via.placeholder.com/45" alt="">
+            <strong>@keysa</strong>
+          </div>
+          <img src="https://via.placeholder.com/700x400/ffb6d9/ffffff?text=☕+Coffee+Time" class="post-img mb-2" alt="foto">
+          <div class="d-flex justify-content-between">
+            <div>
+              <button class="btn btn-link text-danger"><i class="bi bi-heart-fill"></i></button>
+              <button class="btn btn-link text-dark"><i class="bi bi-chat"></i></button>
+              <button class="btn btn-link text-dark"><i class="bi bi-send"></i></button>
+            </div>
+            <button class="btn btn-link text-dark"><i class="bi bi-bookmark"></i></button>
+          </div>
+          <p class="mb-0"><strong>180 suka</strong></p>
+          <p><strong>@kania</strong> Kopi dan warna pink itu perpaduan terbaik ☕🌷</p>
+        </div>
+      </div>
+
+      <!-- Sidebar kanan -->
+      <div class="col-md-4 d-none d-md-block sidebar">
+        <div class="card p-3 mb-3 border-0 shadow-sm">
+          <div class="d-flex align-items-center mb-2">
+            <img src="https://via.placeholder.com/60" class="rounded-circle me-2" alt="">
+            <div>
+              <strong>@naa33116</strong><br>
+              <small>hiduplah dengan tenang</small>
+            </div>
+          </div>
+          <button class="btn btn-pink w-100 mt-2">Edit Profil</button>
+        </div>
+
+        <div class="card p-3 border-0 shadow-sm">
+          <h6 class="fw-bold text-secondary mb-3">✨ Saran Teman ✨</h6>
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <div class="d-flex align-items-center">
+              <img src=" //via.placeholder.com/40" class="rounded-circle me-2">
+              <small>@nanasecound07</small>
+            </div>
+            <a href="#" class="text-pink text-decoration-none fw-bold">Ikuti</a>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <div class="d-flex align-items-center">
+              <img src="https://via.placeholder.com/40" class="rounded-circle me-2">
+              <small>@aisyah_flower</small>
+            </div>
+            <a href="#" class="text-pink text-decoration-none fw-bold">Ikuti</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 PinkGram 💖 Dibuat oleh Hasna Rufaida Maulida</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
